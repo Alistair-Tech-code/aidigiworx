@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIDigiWorx Business HQ — Digital Business Setup Demo</title>
+<style>
+:root{--neon:#00ff66;--ink:#07110d;--panel:#0d1d15;--muted:#9fb0a7;--line:#ffffff16;--white:#f6fff9}
+*{box-sizing:border-box}body{margin:0;background:#050b08;color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+button,input,select,textarea{font:inherit}.shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.side{background:#07110d;border-right:1px solid var(--line);padding:24px;position:sticky;top:0;height:100vh}.logo{font-weight:950;font-size:24px;letter-spacing:-1px;margin-bottom:34px}.g{color:var(--neon)}.nav{display:grid;gap:7px}.nav button{border:0;background:transparent;color:#aebdb5;text-align:left;padding:12px;border-radius:10px;cursor:pointer}.nav button.active,.nav button:hover{background:#00ff6612;color:#fff}.side .tag{margin-top:30px}.tag{display:inline-block;border:1px solid #00ff6650;color:var(--neon);padding:6px 9px;border-radius:99px;font-size:10px;font-weight:900;letter-spacing:1px;text-transform:uppercase}.main{padding:30px;max-width:1500px;width:100%;margin:auto}.top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:28px}.eyebrow{color:var(--neon);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}h1{font-size:42px;letter-spacing:-2px;margin:7px 0}h2{font-size:26px;margin:0 0 18px}p{color:var(--muted);line-height:1.6}.btn{border:0;border-radius:10px;padding:11px 16px;background:var(--neon);color:#041008;font-weight:900;cursor:pointer}.btn.secondary{background:transparent;color:#fff;border:1px solid #00ff6650}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px}.stat b{display:block;font-size:30px;margin-top:8px}.stat span{color:var(--muted);font-size:12px}.section{display:none}.section.show{display:block}.grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:18px}.list{display:grid;gap:10px}.row{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:13px;border:1px solid var(--line);border-radius:12px;background:#09160f}.row small{color:var(--muted)}.status{font-size:11px;border-radius:99px;padding:5px 8px;background:#ffffff0c;color:#cfe0d7}.status.green{color:var(--neon);background:#00ff6612}.money{font-size:34px;font-weight:950}.table{width:100%;border-collapse:collapse}.table th,.table td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:13px}.table th{color:#aebdb5;font-size:11px;text-transform:uppercase;letter-spacing:1px}.check{accent-color:var(--neon);transform:scale(1.2)}.prompt{border-left:3px solid var(--neon);padding:16px;background:#09160f;border-radius:10px;margin-bottom:12px}.prompt code{display:block;color:#dce9e2;white-space:pre-wrap;font-family:inherit;line-height:1.6}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.field{background:#09160f;border:1px solid var(--line);color:#fff;border-radius:10px;padding:10px;width:100%}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.notice{padding:14px;border:1px solid #00ff6630;background:#00ff6608;border-radius:12px;color:#cde3d6;margin-bottom:18px}
+@media(max-width:900px){.shell{grid-template-columns:1fr}.side{position:relative;height:auto}.nav{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}@media(max-width:560px){.grid4,.two{grid-template-columns:1fr}.main{padding:18px}h1{font-size:32px}}
+</style></head>
+<body>
+<div class="shell">
+<aside class="side"><div class="logo"><span class="g">AI</span>Digi<span class="g">Worx</span></div>
+<div class="nav">
+<button class="active" onclick="show('dashboard',this)">▦ Dashboard</button>
+<button onclick="show('clients',this)">♙ Clients & Leads</button>
+<button onclick="show('projects',this)">▤ Projects</button>
+<button onclick="show('tasks',this)">☑ Tasks</button>
+<button onclick="show('finance',this)">R Finance</button>
+<button onclick="show('ai',this)">✦ AI Prompt System</button>
+</div><div class="tag">R750 Demo Setup</div><p style="font-size:12px">Built as if AIDigiWorx purchased the Digital Business Setup.</p></aside>
+<main class="main">
+<div class="top"><div><div class="eyebrow">BUSINESS HQ · AIDIGIWORX</div><h1>One place to run the business.</h1><p style="margin:0">A practical operating dashboard for leads, clients, projects, tasks, money and AI-assisted work.</p></div><button class="btn" onclick="show('ai',document.querySelectorAll('.nav button')[5])">Use AI Prompt System</button></div>
+
+<section id="dashboard" class="section show">
+<div class="notice"><strong>Customer view:</strong> This is the completed R750 setup demonstration. The data below is pre-populated with AIDigiWorx's real offers and current work so a prospective customer can see exactly what they receive.</div>
+<div class="grid4"><div class="stat"><span>Active Leads</span><b>5</b></div><div class="stat"><span>Active Projects</span><b>4</b></div><div class="stat"><span>Open Tasks</span><b>8</b></div><div class="stat"><span>Revenue Logged</span><b>R1,249</b></div></div>
+<div class="grid2"><div class="card"><h2>Priority Today</h2><div class="list">
+<div class="row"><span>Publish TikTok Video #3</span><span class="status green">Today</span></div>
+<div class="row"><span>Promote R750 Digital Business Setup</span><span class="status green">Today</span></div>
+<div class="row"><span>Check Mailchimp subscriber flow</span><span class="status">Next</span></div>
+<div class="row"><span>Create Facebook version of sales post</span><span class="status">Next</span></div></div></div>
+<div class="card"><h2>Offer Snapshot</h2><div class="list">
+<div class="row"><span>AI Prompt Starter Pack</span><b>FREE</b></div>
+<div class="row"><span>Smarter Prompts</span><b>R149</b></div>
+<div class="row"><span>Tech Freelancer OS</span><b>R250</b></div>
+<div class="row"><span>Digital Business Setup</span><b>R750</b></div></div></div></div>
+</section>
+
+<section id="clients" class="section"><div class="card"><h2>Clients & Leads</h2><p>Track prospects from first contact through payment and delivery.</p><div class="toolbar"><input class="field" id="leadInput" placeholder="Add a lead name or business…"><button class="btn" onclick="addLead()">Add Lead</button></div><table class="table"><thead><tr><th>Lead</th><th>Offer</th><th>Stage</th><th>Value</th></tr></thead><tbody id="leadBody">
+<tr><td>Example Small Business</td><td>Digital Business Setup</td><td><span class="status green">Interested</span></td><td>R750</td></tr>
+<tr><td>Example Freelancer</td><td>Tech Freelancer OS</td><td><span class="status">New</span></td><td>R250</td></tr>
+<tr><td>Example Creator</td><td>Smarter Prompts</td><td><span class="status">New</span></td><td>R149</td></tr>
+</tbody></table></div></section>
+
+<section id="projects" class="section"><div class="card"><h2>Project Pipeline</h2><div class="list">
+<div class="row"><span><strong>AIDigiWorx Website</strong><br><small>Website, payments, free starter pack</small></span><span class="status green">Live</span></div>
+<div class="row"><span><strong>TikTok Growth</strong><br><small>Video #3 + 3–5 videos/week</small></span><span class="status green">Active</span></div>
+<div class="row"><span><strong>Mailchimp Lead Capture</strong><br><small>Starter Pack signup and subscriber collection</small></span><span class="status green">Active</span></div>
+<div class="row"><span><strong>R750 Service Launch</strong><br><small>Sales post, DMs, customer delivery system</small></span><span class="status green">Priority</span></div>
+</div></div></section>
+
+<section id="tasks" class="section"><div class="card"><h2>Task & Action Tracker</h2><p>Check tasks off as they are completed. Your progress is saved in this browser.</p><div id="taskList" class="list"></div></div></section>
+
+<section id="finance" class="section"><div class="grid2"><div class="card"><h2>Revenue Tracker</h2><div class="money">R1,249</div><p>Demo revenue logged from current AIDigiWorx sales activity.</p><table class="table"><tr><th>Offer</th><th>Price</th><th>Status</th></tr><tr><td>Smarter Prompts</td><td>R149</td><td>Live</td></tr><tr><td>Tech Freelancer OS</td><td>R250</td><td>Live</td></tr><tr><td>Digital Business Setup</td><td>R750</td><td>Priority offer</td></tr></table></div><div class="card"><h2>Invoice Checklist</h2><div class="list"><label><input class="check" type="checkbox"> Payment received</label><label><input class="check" type="checkbox"> Customer information received</label><label><input class="check" type="checkbox"> Setup completed</label><label><input class="check" type="checkbox"> Customisation completed</label><label><input class="check" type="checkbox"> Delivery confirmed</label></div></div></div></section>
+
+<section id="ai" class="section"><div class="card"><h2>AI Prompt System</h2><p>Reusable prompts for everyday AIDigiWorx business work. Each prompt follows the same practical formula: <strong>ROLE + TASK + CONTEXT + CONSTRAINTS + FORMAT + GOAL</strong>.</p>
+<div class="prompt"><b>01 · Content Repurposer</b><code>You are a practical social-media strategist. Turn the following AIDigiWorx idea into 5 short-form posts. Context: South African audience, practical AI tools, digital products and services. Keep each post concise, useful and non-hypey. Format: Hook / Value / CTA. Goal: drive profile visits and enquiries.</code></div>
+<div class="prompt"><b>02 · Lead Follow-Up</b><code>You are a professional sales assistant. Write a friendly follow-up to a potential AIDigiWorx customer who showed interest in the R750 Digital Business Setup but has not purchased. Context: they are a small-business owner. Constraint: no pressure or exaggerated claims. Format: short WhatsApp message. Goal: get a clear yes/no or a useful question.</code></div>
+<div class="prompt"><b>03 · Business Priorities</b><code>You are an operations manager. Review my current AIDigiWorx tasks and identify the 3 highest-value actions for today. Context: the immediate goal is revenue, with the R750 Digital Business Setup as the priority offer. Constraint: very little upfront investment. Format: Priority / Why / Next action. Goal: focus my time on actions most likely to create a sale.</code></div>
+<div class="prompt"><b>04 · Customer Setup</b><code>You are a digital-business systems consultant. Design a practical workspace for this customer: [CUSTOMER]. Business type: [TYPE]. Main services: [SERVICES]. Current pain points: [PAIN POINTS]. Include dashboard, clients, projects, tasks, finances and AI prompts. Format: database fields + workflow + setup notes. Goal: deliver a simple system the customer can actually use.</code></div>
+</div></section>
+</main></div>
+<script>
+const tasks=[
+["Promote R750 Digital Business Setup","sales"],["Publish TikTok Video #3","content"],["Create Facebook sales post","marketing"],["Follow up with interested leads","sales"],["Check Mailchimp subscribers","marketing"],["Review Paystack purchases","finance"],["Create next TikTok concept","content"],["Prepare customer onboarding questions","delivery"]
+];
+function loadTasks(){let saved=JSON.parse(localStorage.getItem('aidigi_tasks')||'{}');document.getElementById('taskList').innerHTML=tasks.map((t,i)=>'<label class="row"><span><input class="check" type="checkbox" '+(saved[i]?'checked':'')+' onchange="toggleTask('+i+',this.checked)"> '+t[0]+'</span><small>'+t[1].toUpperCase()+'</small></label>').join('')}
+function toggleTask(i,v){let s=JSON.parse(localStorage.getItem('aidigi_tasks')||'{}');s[i]=v;localStorage.setItem('aidigi_tasks',JSON.stringify(s))}
+function addLead(){let v=document.getElementById('leadInput').value.trim();if(!v)return;let tr=document.createElement('tr');tr.innerHTML='<td>'+v.replace(/</g,'&lt;')+'</td><td>To qualify</td><td><span class="status">New</span></td><td>—</td>';document.getElementById('leadBody').prepend(tr);document.getElementById('leadInput').value=''}
+function show(id,btn){document.querySelectorAll('.section').forEach(x=>x.classList.remove('show'));document.getElementById(id).classList.add('show');document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');loadTasks()}
+loadTasks();
+</script></body></html>
