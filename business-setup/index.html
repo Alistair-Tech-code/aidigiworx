@@ -58,9 +58,34 @@ button,input,select,textarea{font:inherit}.shell{display:grid;grid-template-colu
 
 <section id="customer-workspaces" class="section">
   <div class="notice"><strong>Customer Workspaces:</strong> Customer records and dashboard links for paid Digital Business Setup clients.</div>
+  <div class="customer-preview" style="border:1px solid #ffffff20;border-radius:18px;overflow:hidden;background:#08120d;margin-bottom:20px">
+    <div style="background:#242a27;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
+      <div style="font-size:17px;font-weight:800;color:#fff">AIDigiWorx <span style="color:#aeb9b2;font-weight:500">| Customer Dashboard</span></div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <a href="https://aidigiworx-business-hq.vercel.app/" target="_blank" rel="noopener" style="display:inline-block;background:#050806;color:#fff;border:1px solid #fff;padding:9px 14px;border-radius:9px;text-decoration:none;font-weight:700">HQ Admin</a>
+        <span style="display:inline-block;background:#00ff66;color:#05210f;padding:7px 12px;border-radius:99px;font-size:11px;font-weight:900;letter-spacing:.7px">PAID</span>
+      </div>
+    </div>
+    <div style="padding:22px">
+      <div style="color:var(--neon);font-size:12px;font-weight:900;letter-spacing:2px;margin-bottom:8px">ADW-001</div>
+      <h2 style="font-size:30px;margin:0 0 8px">Sarah’s Designs</h2>
+      <p style="margin:0 0 20px">Your Digital Business Setup is live. Access your tools, links and delivery details below.</p>
+      <div class="customer-details" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px">
+        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">CLIENT NUMBER</div><div style="color:var(--neon);font-size:22px;font-weight:900;margin-top:8px">ADW-001</div></div>
+        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">OWNER</div><div style="font-weight:800;margin-top:8px">Sarah Williams</div></div>
+        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">EMAIL</div><div style="font-weight:800;margin-top:8px;overflow-wrap:anywhere">sarah@sarahsdesigns.co.za</div></div>
+        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">PACKAGE</div><div style="font-weight:800;margin-top:8px">Digital Business Setup (R750)</div></div>
+        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">STATUS</div><div style="color:var(--neon);font-weight:800;margin-top:8px">Setup Complete</div></div>
+      </div>
+      <div class="customer-action-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px">
+        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:14px;padding:18px"><h3 style="margin:0 0 8px">Google Business Profile</h3><p style="margin:0 0 16px">Set up or manage your business listing so customers can find Sarah’s Designs on Google.</p><a href="https://www.google.com/business/" target="_blank" rel="noopener" style="display:inline-block;background:#050806;color:#fff;border:1px solid #fff;padding:10px 14px;border-radius:9px;text-decoration:none;font-weight:800">Open Google Profile Setup</a></div>
+        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:14px;padding:18px"><h3 style="margin:0 0 8px">WhatsApp Business Setup</h3><p style="margin:0 0 16px">Get started with WhatsApp Business to help customers contact you and learn about your services.</p><a href="https://business.whatsapp.com/" target="_blank" rel="noopener" style="display:inline-block;background:#050806;color:#fff;border:1px solid #fff;padding:10px 14px;border-radius:9px;text-decoration:none;font-weight:800">Open WhatsApp Setup</a></div>
+      </div>
+    </div>
+  </div>
   <div class="card">
-    <h2>Customer Workspaces</h2>
-    <p>Customer details, purchase status and the link to their individual workspace.</p>
+    <h2>Customer Workspace Records</h2>
+    <p>Manage customer details, purchase status and links to individual workspaces.</p>
     <div id="hqCustomerWorkspaces" class="list"></div>
   </div>
 </section>
