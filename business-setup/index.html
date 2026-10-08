@@ -23,7 +23,7 @@ button,input,select,textarea{font:inherit}.shell{display:grid;grid-template-colu
 <button onclick="show('r750-delivery',this)">✓ R750 Customer Delivery</button>
 </div><div class="tag">AIDigiWorx HQ</div><p style="font-size:12px">Your working business system. Add your real leads, projects, tasks and payments here.</p><div class="nav" style="margin-top:16px"><button onclick="show('settings',this)">⚙ Settings & Backup</button></div></aside>
 <main class="main">
-<div class="top"><div><div class="eyebrow">BUSINESS HQ · AIDIGIWORX</div><h1>One place to run the business.</h1><p style="margin:0">A practical operating dashboard for leads, clients, projects, tasks, money and AI-assisted work.</p></div><button class="btn" onclick="show('ai',document.querySelectorAll('.nav button')[5])">Use AI Prompt System</button></div>
+<div class="top"><div><div class="eyebrow">BUSINESS HQ · AIDIGIWORX</div><h1>One place to run the business.</h1><p style="margin:0">A practical operating dashboard for leads, clients, projects, tasks, money and AI-assisted work.</p></div><div class="toolbar" style="margin:0;justify-content:flex-end"><button class="btn" onclick="exportData()">Backup</button><label class="btn secondary" style="display:inline-block">Restore<input type="file" accept=".json" style="display:none" onchange="importData(event)"></label><button class="btn secondary" onclick="show('ai',document.querySelectorAll('.nav button')[5])">Use AI Prompt System</button></div></div>
 
 <section id="dashboard" class="section show">
 <div class="notice"><strong>Your working HQ:</strong> This is the version you use to run AIDigiWorx. Changes are saved in this browser. Use Settings & Backup to export a backup.</div>
