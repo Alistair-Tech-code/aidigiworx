@@ -58,31 +58,6 @@ button,input,select,textarea{font:inherit}.shell{display:grid;grid-template-colu
 
 <section id="customer-workspaces" class="section">
   <div class="notice"><strong>Customer Workspaces:</strong> Customer records and dashboard links for paid Digital Business Setup clients.</div>
-  <div class="customer-preview" style="border:1px solid #ffffff20;border-radius:18px;overflow:hidden;background:#08120d;margin-bottom:20px">
-    <div style="background:#242a27;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap">
-      <div style="font-size:17px;font-weight:800;color:#fff">AIDigiWorx <span style="color:#aeb9b2;font-weight:500">| Customer Dashboard</span></div>
-      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
-        <a href="https://aidigiworx-business-hq.vercel.app/" target="_blank" rel="noopener" style="display:inline-block;background:#050806;color:#fff;border:1px solid #fff;padding:9px 14px;border-radius:9px;text-decoration:none;font-weight:700">HQ Admin</a>
-        <span style="display:inline-block;background:#00ff66;color:#05210f;padding:7px 12px;border-radius:99px;font-size:11px;font-weight:900;letter-spacing:.7px">PAID</span>
-      </div>
-    </div>
-    <div style="padding:22px">
-      <div style="color:var(--neon);font-size:12px;font-weight:900;letter-spacing:2px;margin-bottom:8px">ADW-001</div>
-      <h2 style="font-size:30px;margin:0 0 8px">Sarah’s Designs</h2>
-      <p style="margin:0 0 20px">Your Digital Business Setup is live. Access your tools, links and delivery details below.</p>
-      <div class="customer-details" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:20px">
-        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">CLIENT NUMBER</div><div style="color:var(--neon);font-size:22px;font-weight:900;margin-top:8px">ADW-001</div></div>
-        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">OWNER</div><div style="font-weight:800;margin-top:8px">Sarah Williams</div></div>
-        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">EMAIL</div><div style="font-weight:800;margin-top:8px;overflow-wrap:anywhere">sarah@sarahsdesigns.co.za</div></div>
-        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">PACKAGE</div><div style="font-weight:800;margin-top:8px">Digital Business Setup (R750)</div></div>
-        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:12px;padding:15px"><div style="font-size:10px;color:#9fb0a7;font-weight:800;letter-spacing:1px">STATUS</div><div style="color:var(--neon);font-weight:800;margin-top:8px">Setup Complete</div></div>
-      </div>
-      <div class="customer-action-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px">
-        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:14px;padding:18px"><h3 style="margin:0 0 8px">Google Business Profile</h3><p style="margin:0 0 16px">Set up or manage your business listing so customers can find Sarah’s Designs on Google.</p><a href="https://www.google.com/business/" target="_blank" rel="noopener" style="display:inline-block;background:#050806;color:#fff;border:1px solid #fff;padding:10px 14px;border-radius:9px;text-decoration:none;font-weight:800">Open Google Profile Setup</a></div>
-        <div style="background:#0d1d15;border:1px solid #ffffff16;border-radius:14px;padding:18px"><h3 style="margin:0 0 8px">WhatsApp Business Setup</h3><p style="margin:0 0 16px">Get started with WhatsApp Business to help customers contact you and learn about your services.</p><a href="https://business.whatsapp.com/" target="_blank" rel="noopener" style="display:inline-block;background:#050806;color:#fff;border:1px solid #fff;padding:10px 14px;border-radius:9px;text-decoration:none;font-weight:800">Open WhatsApp Setup</a></div>
-      </div>
-    </div>
-  </div>
   <div class="card">
     <h2>Customer Workspace Records</h2>
     <p>Manage customer details, purchase status and links to individual workspaces.</p>
@@ -105,8 +80,8 @@ button,input,select,textarea{font:inherit}.shell{display:grid;grid-template-colu
 </main></div>
 <script>
 const KEY='aidigi_hq_v2';
-let db=JSON.parse(localStorage.getItem(KEY)||'null')||{profile:{name:'AIDigiWorx',tagline:'Smarter Tools. Bigger Results.',about:'AI and digital tools for small businesses, freelancers, creators and entrepreneurs.'},leads:[],projects:[],tasks:[{text:'Promote R750 Digital Business Setup',priority:'Today',done:false},{text:'Publish TikTok Video #3',priority:'Today',done:false},{text:'Create Facebook sales post',priority:'High',done:false},{text:'Follow up with interested leads',priority:'High',done:false},{text:'Check Mailchimp subscribers',priority:'Normal',done:false},{text:'Review Paystack purchases',priority:'Normal',done:false},{text:'Create next TikTok concept',priority:'Normal',done:false},{text:'Prepare customer onboarding questions',priority:'Normal',done:false}],sales:[],delivery:['Payment received','Customer information received','Setup completed','Customisation completed','Delivery confirmed'],customers:[{id:'ADW-001',name:'Sarah’s Designs',owner:'Sarah Williams',business:'Sarah’s Designs',email:'sarah@sarahsdesigns.co.za',location:'Johannesburg',product:'AIDigiWorx Digital Business Setup',price:'R750',payment:'Paid',dashboard:'https://aidigiworx-7uuboltio-aalistair-sebastians-projects.vercel.app/customers/sarahs-designs/',checks:[true,true,true,true,true]}]};
-if(!Array.isArray(db.customers)){db.customers=[{id:'ADW-001',name:'Sarah’s Designs',owner:'Sarah Williams',business:'Sarah’s Designs',email:'sarah@sarahsdesigns.co.za',location:'Johannesburg',product:'AIDigiWorx Digital Business Setup',price:'R750',payment:'Paid',dashboard:'https://aidigiworx-7uuboltio-aalistair-sebastians-projects.vercel.app/customers/sarahs-designs/',checks:[true,true,true,true,true]}];localStorage.setItem(KEY,JSON.stringify(db))} db.customers.forEach(c=>{if(!Array.isArray(c.checks))c.checks=[false,false,false,false,false]});
+let db=JSON.parse(localStorage.getItem(KEY)||'null')||{profile:{name:'AIDigiWorx',tagline:'Smarter Tools. Bigger Results.',about:'AI and digital tools for small businesses, freelancers, creators and entrepreneurs.'},leads:[],projects:[],tasks:[{text:'Promote R750 Digital Business Setup',priority:'Today',done:false},{text:'Publish TikTok Video #3',priority:'Today',done:false},{text:'Create Facebook sales post',priority:'High',done:false},{text:'Follow up with interested leads',priority:'High',done:false},{text:'Check Mailchimp subscribers',priority:'Normal',done:false},{text:'Review Paystack purchases',priority:'Normal',done:false},{text:'Create next TikTok concept',priority:'Normal',done:false},{text:'Prepare customer onboarding questions',priority:'Normal',done:false}],sales:[],delivery:['Payment received','Customer information received','Setup completed','Customisation completed','Delivery confirmed'],customers:[]};
+if(!Array.isArray(db.customers))db.customers=[]; db.customers=db.customers.filter(c=>!(c.id==='ADW-001'&&c.email==='sarah@sarahsdesigns.co.za'&&c.name==='Sarah’s Designs')); db.customers.forEach(c=>{if(!Array.isArray(c.checks))c.checks=[false,false,false,false,false]});localStorage.setItem(KEY,JSON.stringify(db));
 function save(){localStorage.setItem(KEY,JSON.stringify(db));renderAll()}
 function esc(v){return String(v??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
 function money(n){return 'R'+Number(n||0).toLocaleString('en-ZA')}
