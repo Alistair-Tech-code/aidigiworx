@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/business-setup",
+      "destination": "/r750-business-setup/",
+      "permanent": true
+    },
+    {
+      "source": "/business-setup/",
+      "destination": "/r750-business-setup/",
+      "permanent": true
+    },
+    {
+      "source": "/business-setup/:path*",
+      "destination": "/r750-business-setup/",
+      "permanent": true
+    }
+  ]
+}
