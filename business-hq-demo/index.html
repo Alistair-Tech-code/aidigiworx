@@ -25,7 +25,7 @@ button,input,select,textarea{font:inherit}.shell{display:grid;grid-template-colu
 <button onclick="show('finance',this)">R Finance</button>
 <button onclick="show('ai',this)">✦ AI Prompt System</button>
 
-</div><div class="tag">AIDigiWorx HQ</div><p style="font-size:12px">Interactive product preview. Sample data only — your private business records are not connected.</p><div class="nav" style="margin-top:16px"><button onclick="show('settings',this)">⚙ Settings & Backup</button></div></aside>
+</div><div class="tag">AIDigiWorx HQ</div><p style="font-size:12px">Interactive product preview. Sample data only — your private business records are not connected.</p></aside>
 <main class="main">
 <div class="notice"><strong>INTERACTIVE CUSTOMER DEMO · SAMPLE DATA ONLY.</strong> Try adding or editing examples. This is a preview, not your private Business HQ. Changes are stored separately in this browser.</div>
 <div class="demo-cta" style="margin:0 0 22px"><a class="btn" href="https://paystack.shop/pay/aidigiworx-business-setup" target="_blank" rel="noopener">Order Your Business HQ — R750</a><a class="btn secondary" href="/">Back to AIDigiWorx</a></div>
@@ -52,7 +52,7 @@ button,input,select,textarea{font:inherit}.shell{display:grid;grid-template-colu
 
 <section id="tasks" class="section"><div class="card"><h2>Task & Action Tracker</h2><p>Add the work you actually need to do. Completed tasks are saved.</p><div class="toolbar"><input class="field" id="taskInput" placeholder="New task"><select class="field" id="taskPriority"><option>Normal</option><option>High</option><option>Today</option></select><button class="btn" onclick="addTask()">Add Task</button></div><div id="taskList" class="list"></div></div></section>
 
-<section id="finance" class="section"><div class="grid2"><div class="card"><h2>Revenue Tracker</h2><div class="money" id="financeTotal">R0</div><p>Example figures for demonstration only — not actual customer payments or AIDigiWorx revenue.</p><div class="toolbar"><input class="field" id="saleCustomer" placeholder="Customer"><input class="field" id="saleOffer" placeholder="Offer"><input class="field" id="saleAmount" type="number" placeholder="Amount (R)"><button class="btn" onclick="addSale()">Record Payment</button></div><table class="table"><thead><tr><th>Customer</th><th>Offer</th><th>Amount</th><th>Date</th><th></th></tr></thead><tbody id="salesBody"></tbody></table></div><div class="card"><h2>Customer Delivery Checklist</h2><div class="list" id="deliveryChecks"></div></div></div></section>
+<section id="finance" class="section"><div class="grid2"><div class="card"><h2>Revenue Tracker</h2><div class="money" id="financeTotal">R0</div><p>Example figures for demonstration only — not actual customer payments or AIDigiWorx revenue.</p><div class="toolbar"><input class="field" id="saleCustomer" placeholder="Customer"><input class="field" id="saleOffer" placeholder="Offer"><input class="field" id="saleAmount" type="number" placeholder="Amount (R)"><button class="btn" onclick="addSale()">Record Payment</button></div><table class="table"><thead><tr><th>Customer</th><th>Offer</th><th>Amount</th><th>Date</th><th></th></tr></thead><tbody id="salesBody"></tbody></table></div><div class="card" style="display:none"><h2>Customer Delivery Checklist</h2><div class="list" id="deliveryChecks"></div></div></div></section>
 
 <section id="ai" class="section"><div class="card"><h2>AI Prompt System</h2><p>Reusable prompts for everyday AIDigiWorx business work. Each prompt follows the same practical formula: <strong>ROLE + TASK + CONTEXT + CONSTRAINTS + FORMAT + GOAL</strong>.</p>
 <div class="prompt"><b>01 · Content Repurposer</b><code>You are a practical social-media strategist. Turn the following AIDigiWorx idea into 5 short-form posts. Context: South African audience, practical AI tools, digital products and services. Keep each post concise, useful and non-hypey. Format: Hook / Value / CTA. Goal: drive profile visits and enquiries.</code></div>
@@ -126,6 +126,5 @@ function exportData(){let blob=new Blob([JSON.stringify(db,null,2)],{type:'appli
 function importData(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{db=JSON.parse(r.result);save();alert('Backup restored successfully.')}catch(err){alert('That file is not a valid AIDigiWorx HQ backup.')}};r.readAsText(f)}
 function resetData(){if(confirm('Reset your working HQ data? This cannot be undone.')){localStorage.removeItem(KEY);location.reload()}}
 renderAll();
-document.querySelectorAll('button[onclick*="show(\'customer-workspaces"],button[onclick*="show(\'r750-delivery"],button[onclick*="show(\'settings"]').forEach(el=>el.classList.add('private-demo'));
 document.querySelectorAll('#customer-workspaces,#r750-delivery,#settings').forEach(el=>el.classList.add('private-demo'));
 </script></body></html>
