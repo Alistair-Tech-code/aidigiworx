@@ -30,6 +30,40 @@
   .links{gap:clamp(12px,1.25vw,18px);margin-right:20px;font-size:12px}
   .navin>.btn{padding:13px 16px;margin-left:10px;font-size:12px}
 }
+
+/* Final laptop navigation layout: distinct columns prevent link/button overlap. */
+@media(min-width:851px) and (max-width:1450px){
+  .navin{
+    display:grid;
+    grid-template-columns:auto minmax(0,1fr) auto auto;
+    align-items:center;
+    column-gap:16px;
+    row-gap:0;
+  }
+  .logo{margin:0;flex:none}
+  .links{
+    order:initial;
+    display:flex;
+    flex:initial;
+    min-width:0;
+    width:100%;
+    margin:0;
+    padding:0;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:nowrap;
+    gap:clamp(8px,1vw,14px);
+    font-size:11px;
+  }
+  .links a{flex:0 0 auto;white-space:nowrap}
+  .navin>.btn{
+    flex:none;
+    margin:0;
+    padding:12px 14px;
+    font-size:11px;
+    white-space:nowrap;
+  }
+}
 </style>
 </head><body>
 <nav class="nav"><div class="wrap navin"><div class="logo"><span class="g">AI</span>Digi<span class="g">Worx</span></div><div class="links"><a href="#why">Why AIDigiWorx</a><a href="#free">Free Starter Pack</a><a href="#product">R149 Prompts</a><a href="#tech-os">Tech Freelancer OS</a><a href="#service">Business Setup</a><a href="#future">Future</a></div><a class="btn alt" href="/business-hq-demo/index.html">See R750 Setup Demo</a><a class="btn" href="https://paystack.shop/pay/aidigiworx-smarter-prompts">Get the Guide — R149</a></div></nav>
